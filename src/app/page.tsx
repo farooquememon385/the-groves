@@ -3,9 +3,9 @@ export default function Home() {
     <div className="bg-background">
       <section className="min-h-screen bg-[url('/bgImg/home-bg.png')] relative">
         <div className="absolute top-0 left-0 min-h-screen lg:w-1/2 bg-[#000] bg-opacity-[0.52]">
-          <div className="max-w-[540px] mt-48 ml-auto">
+          <div className="max-w-[560px] px-3 mt-48 ml-auto">
             <div className="text-[13px]">KHAWAJA YANNI</div>
-            <h1 className="text-[68px] font-serif">The new era of luxury</h1>
+            <h1 className="text-[68px] font-playfair">The new era of luxury</h1>
             <p className="text-[15px]">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum.
