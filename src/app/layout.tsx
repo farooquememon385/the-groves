@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,6 +25,11 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const playFair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-white ${inter.variable}`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased text-white ${inter.variable} ${playFair.variable}`}
       >
         <NavBar />
         {children}

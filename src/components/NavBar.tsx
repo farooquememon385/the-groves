@@ -31,7 +31,12 @@ function NavBar() {
           <YellowGradientButton>Login</YellowGradientButton>
           <div className="flex items-center gap-2">
             <DropDownIcon />
-            <Image src={"/english.png"} alt="English" width={33} height={22} />
+            <Image
+              src={"/img/english.png"}
+              alt="English"
+              width={33}
+              height={22}
+            />
             <div>English</div>
           </div>
         </div>
